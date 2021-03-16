@@ -16,14 +16,14 @@
 }
 
 #home{
-position: relative;
-padding: 10px 20px;
-border-style: none;
-background-color: transparent;
-font-size: 14px;
-text-transform: uppercase;
-letter-spacing: 2px;
-overflow: hidden;
+    position: relative;
+    padding: 10px 20px;
+    border-style: none;
+    background-color: transparent;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
 
 }
 #home::after{
@@ -272,7 +272,7 @@ overflow: hidden;
 }
 
 #buy:hover span {
- top: -50px;
+     top: -50px;
 }
 #buy:hover {
     background-color: rgb(19, 197, 19);
