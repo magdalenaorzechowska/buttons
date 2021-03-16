@@ -1,0 +1,312 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;;
+    height:50vh;
+}
+
+#home{
+position: relative;
+padding: 10px 20px;
+border-style: none;
+background-color: transparent;
+font-size: 14px;
+text-transform: uppercase;
+letter-spacing: 2px;
+overflow: hidden;
+
+}
+#home::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: 0.3s linear;
+}
+#home:hover::after {
+    left:0;
+}
+
+
+#read-more {
+    position: relative;
+    padding: 10px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border: 2px solid rgb(158, 0, 145);
+    background-color:transparent; 
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px  rgb(158, 0, 145);
+    color: rgb(158, 0, 145);
+    overflow: hidden;
+    transition: 0.25s .05s linear;
+}
+#read-more::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(158, 0, 145);
+    transition: .3s linear;
+    z-index: -1;
+}
+#read-more:hover::after {
+    height: 100%;
+}
+#read-more:hover {
+    color: white;
+}
+
+
+#subscribe {
+    padding: 0 40px;
+    line-height: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color:rgb(10, 0, 68);
+    background-color: white;
+    text-transform: uppercase;
+    border: 2px solid rgb(10, 0, 68);
+    background-color:transparent; 
+    overflow: hidden;
+    transition: .15s .15s;
+    position: relative;
+}
+
+#subscribe::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: rgb(10, 0, 68);
+    transition: left 0.2s, height 0.1s 0.2s;
+    z-index: -1;
+}
+
+#subscribe:hover::after {
+    left: 0;
+    height: 100%;
+}
+#subscribe:hover  {
+    color: white;
+}
+
+
+#more {
+    line-height: 40px;
+    padding: 0 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border: 2px solid red;
+    position: relative;
+    overflow: hidden;
+    
+}
+#more::after {
+    content: "";
+    position: absolute;
+    top:0;
+    left:-24px;
+    border-left: 20px solid red;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    transition: 0.3s;
+}
+#more:hover::after {
+    left:0;
+}
+#more-2 {
+    width: 140px;
+    padding: 10px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    position: relative;
+}
+#more-2 i {
+  font-size: 14px;
+  transition: .6s linear;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  padding-left: 10px;
+  color: black;
+}
+#more-2 i:nth-of-type(1) {
+  display: inline-block;
+}
+#more-2:hover i:nth-of-type(2) {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+
+#canal {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: white;
+    animation: shock  3.5s linear infinite;
+}
+@keyframes shock {
+    0% { background-color: rgb(255, 255, 255);
+     
+    }
+    90% {background-color: black;
+    }
+    91% { background-color: rgb(255, 255, 255);;
+    }
+    92% { background-color: black;
+    }
+    93% { background-color: rgb(255, 255, 255);
+    }
+    94% { background-color: black;
+    }
+    95% { background-color: rgb(255, 255, 255);
+    }
+    96% { background-color: black;
+    }
+    97% { background-color: rgb(255, 255, 255);
+    }
+    98% { background-color: black;
+    }
+    99% { background-color: rgb(255, 255, 255);
+    }
+    100% { background-color: black;
+    }
+ }
+
+
+ #subscribe-2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    animation: shakes  3.5s linear infinite;
+    
+}
+@keyframes shakes {
+    0%{transform: translateX(0)}
+    90%{transform: translateX(0)}
+    91%{transform: translateX(20px)}
+    92%{transform: translateX(-20px)}  
+    93%{transform: translateX(20px)}
+    94%{transform: translateX(-20px)}
+    95%{transform: translateX(20px)}
+    96%{transform: translateX(-20px)}
+    97%{transform: translateX(20px)}
+    98%{transform: translateX(-20px)}
+    99%{transform: translateX(20px)}
+    100%{transform: translateX(-20px)}
+}
+#subscribe-2:hover {
+    background-color: black;
+    color:white;
+}
+
+
+#buy {
+    width: 165px;
+    height: 50px;
+    border: 2px solid rgb(19, 197, 19);
+    border-radius: 10px;
+    color:rgb(19, 197, 19);
+    background-color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+#buy span {
+    display: block;
+    line-height: 50px;
+    position: relative;
+    top:0;
+    transition: .3s linear;
+}
+
+#buy:hover span {
+ top: -50px;
+}
+#buy:hover {
+    background-color: rgb(19, 197, 19);
+    color:white;
+}
+
+
+#buy-2 {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(241, 35, 35);
+    color:white;
+    border-style: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; 
+    cursor: pointer;
+}
+#buy-2 span {
+    display: block;
+    line-height: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: .3s linear;
+}
+#buy-2:hover span:nth-child(1) {
+    left: -150px;
+}
+#buy-2 span:nth-child(2) {
+    top: -50px;
+    left: 150px;
+   }
+
+#buy-2:hover span:nth-child(2) {
+    left: 0;
+}
